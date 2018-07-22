@@ -42,10 +42,10 @@ namespace Syncfony.Api
                 app.UseExceptionHandler("/Home/Error");
             }
 
-            //app.UseSignalR(routes =>
-            //{
-            //    routes.MapHub<NotesHub>("/notes");
-            //});
+            app.UseSignalR(routes =>
+            {
+                routes.MapHub<NotesHub>("/notes");
+            });
         }
     }
 }

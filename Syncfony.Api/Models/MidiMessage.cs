@@ -8,8 +8,7 @@ namespace Syncfony.Api.Models
     public class MidiMessage
     {
         public MidiMessageState State { get; set; }
-        public int Note { get; set; }
-        public int Velocity { get; set; }
+        public MidiNote Note { get; set; }
     }
 
     public enum MidiMessageState
